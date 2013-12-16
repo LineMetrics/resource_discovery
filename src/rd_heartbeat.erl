@@ -100,7 +100,7 @@ handle_info(timeout, State = #state{frequency = Frequency}) ->
 %% Returns: any (ignored by gen_server)
 %%--------------------------------------------------------------------
 terminate(Reason, _State) ->
-    error_logger:info_msg("stoppping resource discovery hearbeat ~p", [Reason]),
+    lager:debug("stoppping resource discovery hearbeat ~p", [Reason]),
     ok.
 
 %%--------------------------------------------------------------------
