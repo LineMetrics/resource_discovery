@@ -1,3 +1,6 @@
+this fork uses lager-logging !!
+
+
 The Resource Discovery Application
 ==================================
 
